@@ -197,9 +197,9 @@ Principais transformações:
 - **Prata:** tipagem de todas as colunas, padronização de cidades por uma função registrada no catálogo (`pospucrio.silver.padronizar_cidade`) e por uma lista de correções pontuais, CEP com cinco dígitos, correção de nomes de colunas grafados errado na origem e conversão em nulo de valores impossíveis, como zero parcelas e peso zero.
 - **Ouro:** pagamentos, avaliações e fretes são reduzidos a uma linha por pedido **antes** dos joins, para não multiplicar valores. Em seguida, são aplicadas as regras de negócio.
 
-![image_1790528089568.png](./image_1790528089568.png "image_1790528089568.png")
-![image_1790528222140.png](./image_1790528222140.png "image_1790528222140.png")
-![image_1790528265471.png](./image_1790528265471.png "image_1790528265471.png")
+![image_1790528089568.png](./Imagens//image_1790528089568.png "image_1790528089568.png")
+![image_1790528222140.png](./Imagens//image_1790528222140.png "image_1790528222140.png")
+![image_1790528265471.png](./Imagens//image_1790528265471.png "image_1790528265471.png")
 ---
 
 ## Qualidade de Dados
@@ -254,8 +254,8 @@ A análise completa, com todas as consultas e discussões, está no notebook `04
 
 São Paulo concentra 42% das compras, mais que o triplo do Rio de Janeiro. A população explica apenas parte do resultado. São Paulo compra quase o dobro de sua participação populacional, e a Bahia, metade. O frete e o prazo ajudam a explicar: compradores paulistas pagam frete médio de R$ 17,33 e recebem em 7 dias, enquanto no Norte e no Nordeste o frete chega a R$ 49 e o prazo, a 26 dias.
 
-![image_1790528356012.png](./image_1790528356012.png "image_1790528356012.png")
-![image_1790528380745.png](./image_1790528380745.png "image_1790528380745.png")
+![image_1790528356012.png](./Imagens//image_1790528356012.png "image_1790528356012.png")
+![image_1790528380745.png](./Imagens//image_1790528380745.png "image_1790528380745.png")
 ### 2. Qual estado tem o maior gasto com compras online?
 
 | Estado | Gasto total (R$) | % | Ticket médio (R$) | Ticket mediano (R$) |
@@ -268,8 +268,8 @@ São Paulo concentra 42% das compras, mais que o triplo do Rio de Janeiro. A pop
 
 São Paulo lidera, mas com o menor ticket do país. Mesmo sem o frete, o valor das compras cresce com a distância de São Paulo, de R$ 125 para até R$ 218. Onde o frete é caro, só compensa comprar online produtos de valor mais alto.
 
-![image_1790528400405.png](./image_1790528400405.png "image_1790528400405.png")
-![image_1790528428750.png](./image_1790528428750.png "image_1790528428750.png")
+![image_1790528400405.png](./Imagens//image_1790528400405.png "image_1790528400405.png")
+![image_1790528428750.png](./Imagens//image_1790528428750.png "image_1790528428750.png")
 ### 3. Qual estado mais vende em número de vendas?
 
 | Estado do vendedor | Itens vendidos | % |
@@ -283,9 +283,9 @@ São Paulo lidera, mas com o menor ticket do país. Mesmo sem o frete, o valor d
 
 Sul e Sudeste somam 97% dos itens vendidos. Como os vendedores são clientes da Olist, a distribuição mostra onde a empresa construiu sua base de lojistas. O Paraná, sede da empresa, aparece bem acima de seu peso populacional. Minas Gerais já era o segundo polo vendedor no início da série e se estabilizou, enquanto o Rio de Janeiro, com base menor, foi o que mais cresceu.
 
-![image_1790528451060.png](./image_1790528451060.png "image_1790528451060.png")
-![image_1790528481128.png](./image_1790528481128.png "image_1790528481128.png")
-![image_1790528501777.png](./image_1790528501777.png "image_1790528501777.png")
+![image_1790528451060.png](./Imagens//image_1790528451060.png "image_1790528451060.png")
+![image_1790528481128.png](./Imagens//image_1790528481128.png "image_1790528481128.png")
+![image_1790528501777.png](./Imagens//image_1790528501777.png "image_1790528501777.png")
 
 ### 4. Qual estado mais vende em valor?
 
@@ -300,8 +300,8 @@ Sul e Sudeste somam 97% dos itens vendidos. Como os vendedores são clientes da 
 
 O Paraná passa Minas Gerais por vender itens mais caros. A Bahia tem o maior preço médio entre os estados de volume relevante porque 91% de suas vendas se concentram em computadores, telefonia e informática.
 
-![image_1790528533294.png](./image_1790528533294.png "image_1790528533294.png")
-![image_1790528547980.png](./image_1790528547980.png "image_1790528547980.png")
+![image_1790528533294.png](./Imagens//image_1790528533294.png "image_1790528533294.png")
+![image_1790528547980.png](./Imagens//image_1790528547980.png "image_1790528547980.png")
 
 ### 5. Quais são as notas dadas pelos clientes?
 
@@ -315,11 +315,11 @@ O Paraná passa Minas Gerais por vender itens mais caros. A Bahia tem o maior pr
 
 A média geral é 4,09, com distribuição polarizada: 57,8% de notas 5 e 11,5% de notas 1. A polarização se explica pelo prazo de entrega, e a nota despenca depois de três semanas. As menores notas estão no Rio de Janeiro (3,88) e no Nordeste. No Rio, parte da diferença vem de mais pedidos não entregues e mais entregas longas. O restante fica como hipótese.
 
-![image_1790528568610.png](./image_1790528568610.png "image_1790528568610.png")
-![image_1790528578005.png](./image_1790528578005.png "image_1790528578005.png")
-![image_1790528590265.png](./image_1790528590265.png "image_1790528590265.png")
-![image_1790528652295.png](./image_1790528652295.png "image_1790528652295.png")
-![image_1790528664975.png](./image_1790528664975.png "image_1790528664975.png")
+![image_1790528568610.png](./Imagens//image_1790528568610.png "image_1790528568610.png")
+![image_1790528578005.png](./Imagens//image_1790528578005.png "image_1790528578005.png")
+![image_1790528590265.png](./Imagens//image_1790528590265.png "image_1790528590265.png")
+![image_1790528652295.png](./Imagens//image_1790528652295.png "image_1790528652295.png")
+![image_1790528664975.png](./Imagens//image_1790528664975.png "image_1790528664975.png")
 
 ### 6. Qual o método de pagamento mais utilizado?
 
@@ -332,8 +332,8 @@ A média geral é 4,09, com distribuição polarizada: 57,8% de notas 5 e 11,5% 
 
 O parcelamento explica parte da preferência pelo cartão de crédito, mas mesmo entre as compras à vista o cartão supera o boleto. Os dados são anteriores ao Pix.
 
-![image_1790528685432.png](./image_1790528685432.png "image_1790528685432.png")
-![image_1790528701822.png](./image_1790528701822.png "image_1790528701822.png")
+![image_1790528685432.png](./Imagens//image_1790528685432.png "image_1790528685432.png")
+![image_1790528701822.png](./Imagens//image_1790528701822.png "image_1790528701822.png")
 
 ### 7. Qual categoria apresenta mais demanda?
 
@@ -347,7 +347,7 @@ O parcelamento explica parte da preferência pelo cartão de crédito, mas mesmo
 
 A demanda é dispersa. Nenhuma categoria alcança 10% dos itens, e as cinco primeiras somam 40,5%. Beleza e saúde lidera em valor, e relógios e presentes tem o maior preço médio entre as categorias de maior volume.
 
-![image_1790528738240.png](./image_1790528738240.png "image_1790528738240.png")
+![image_1790528738240.png](./Imagens//image_1790528738240.png "image_1790528738240.png")
 
 ### 8. Houve mudança na média das avaliações ao longo dos trimestres?
 
@@ -361,8 +361,8 @@ A demanda é dispersa. Nenhuma categoria alcança 10% dos itens, e as cinco prim
 | 2018-T2 | 4,21 | 11,9 | 8,0 |
 
 A nota caiu no fim de 2017 e no início de 2018, período de pico de volume, com a Black Friday, e voltou quando os prazos se normalizaram. A proporção de entregas longas acompanha a de notas baixas nos mesmos trimestres.
-![image_1790528758107.png](./image_1790528758107.png "image_1790528758107.png")
-![image_1790528776365.png](./image_1790528776365.png "image_1790528776365.png")
+![image_1790528758107.png](./Imagens//image_1790528758107.png "image_1790528758107.png")
+![image_1790528776365.png](./Imagens//image_1790528776365.png "image_1790528776365.png")
 ### 9. Qual o crescimento entre o primeiro semestre de 2017 e o de 2018?
 
 | Indicador | 1º sem. 2017 | 1º sem. 2018 | Crescimento |
@@ -373,7 +373,7 @@ A nota caiu no fim de 2017 e no início de 2018, período de pico de volume, com
 
 O crescimento veio do aumento no número de compras, e não de compras maiores. Ele ajuda a explicar a pressão sobre a logística observada na pergunta 8.
 
-![image_1790528797434.png](./image_1790528797434.png "image_1790528797434.png")
+![image_1790528797434.png](./Imagens//image_1790528797434.png "image_1790528797434.png")
 
 ### 10. Qual a proporção de compras à vista e parceladas?
 
@@ -384,7 +384,7 @@ O crescimento veio do aumento no número de compras, e não de compras maiores. 
 
 A proporção subestima a preferência pelo parcelamento, porque apenas o cartão de crédito permite parcelar. Entre as compras no cartão, 66,8% foram parceladas.
 
-![image_1790528812170.png](./image_1790528812170.png "image_1790528812170.png")
+![image_1790528812170.png](./Imagens//image_1790528812170.png "image_1790528812170.png")
 
 ### 11. Qual o valor médio das compras à vista e das parceladas?
 
@@ -405,9 +405,9 @@ A proporção subestima a preferência pelo parcelamento, porque apenas o cartã
 
 A proporção de parcelamento cresce com o valor, sem um ponto de corte nítido. Que quase quatro em cada dez compras de até R$ 50 sejam parceladas indica que parcelar era um hábito.
 
-![image_1790528828892.png](./image_1790528828892.png "image_1790528828892.png")
+![image_1790528828892.png](./Imagens//image_1790528828892.png "image_1790528828892.png")
 
-![image_1790528846847.png](./image_1790528846847.png "image_1790528846847.png")
+![image_1790528846847.png](./Imagens//image_1790528846847.png "image_1790528846847.png")
 ### Discussão geral
 
 As respostas descrevem um marketplace organizado em torno de um centro geográfico. Com os vendedores concentrados no Sudeste e no Sul, o comprador distante paga frete maior e espera mais. Esse custo molda o que se compra: longe dos vendedores, compra-se menos e mais caro. Molda também a satisfação, que é sobretudo uma avaliação da entrega, tanto entre estados quanto ao longo do tempo. Quando o crescimento acelerado pressionou os prazos, as notas caíram, e se recuperaram quando os prazos se normalizaram. No pagamento, o cartão de crédito domina, e o parcelamento aparece como hábito, presente até nas compras pequenas. A demanda é dispersa entre as categorias.
