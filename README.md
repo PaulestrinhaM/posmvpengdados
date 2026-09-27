@@ -46,6 +46,8 @@ O marketplace é observado pelas duas pontas da transação. Do lado do **compra
 
 **Fonte:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), publicado no Kaggle. Contém cerca de 100 mil pedidos reais realizados na plataforma entre 2016 e 2018, anonimizados. A Olist, com sede em Curitiba, conectava pequenos e médios lojistas aos grandes marketplaces. Os vendedores do dataset são, portanto, clientes da Olist.
 
+**Licença**: Permite uso não comercial. O uso acadêmico deste projeto é compatível.
+
 
 **Estrutura:** nove tabelas relacionais, normalizadas, pensadas para registrar a operação do marketplace.
 
@@ -175,7 +177,7 @@ Uma linha por item vendido, a partir de 2017. Perspectiva do vendedor. Origem: `
 
 ---
 
-## Pipeline de Dados (Etapa 4.4)
+## Pipeline de Dados
 
 O pipeline é dividido em três notebooks, um por camada, cada um lendo da camada anterior e gravando na seguinte. A separação permite executar apenas as etapas afetadas por uma mudança: alterar uma regra do ouro não exige baixar os dados novamente.
 
@@ -198,6 +200,7 @@ Principais transformações:
 - **Ouro:** pagamentos, avaliações e fretes são reduzidos a uma linha por pedido **antes** dos joins, para não multiplicar valores. Em seguida, são aplicadas as regras de negócio.
 
 ![image_1790528089568.png](./Imagens//image_1790528089568.png "image_1790528089568.png")
+![image_1790530752136.png](./image_1790530752136.png "image_1790530752136.png")
 ![image_1790528222140.png](./Imagens//image_1790528222140.png "image_1790528222140.png")
 ![image_1790528265471.png](./Imagens//image_1790528265471.png "image_1790528265471.png")
 ---
